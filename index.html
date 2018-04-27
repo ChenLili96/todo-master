@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+         
+    <title>Todo list app</title>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>  
+	</head>
+	<body>
+
+        <div date-role="page" id="homepage">
+        <input type="text" id="item" placeholder="Write your task here" value="" rows="8" cols="40">
+        <button onClick="submitText()" class="ui-btn ui-shadow" id="add">Add</button>     
+            
+
+		<div class="container">
+			<!-- Uncompleted tasks -->
+			<ul class="todo" id="todo"></ul>
+
+			<!-- Completed tasks -->
+			<ul class="todo" id="completed"></ul>
+		</div>          
+        
+        </div>
+        
+
+	</body>
+</html>
